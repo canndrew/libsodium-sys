@@ -4,3 +4,7 @@ version = "0.1.0"
 authors = ["Andrew Cann <shum@canndrew.org>"]
 
 [dependencies]
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
+
