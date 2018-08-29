@@ -2,6 +2,8 @@ extern crate cc;
 
 fn main() {
     cc::Build::new()
+    .define("CONFIGURED", "1")
+    .warnings(false)
     .include("vendor/src/libsodium/crypto_sign/ed25519/ref10/")
     .include("vendor/src/libsodium/crypto_core/ed25519/ref10/fe_51/")
     .include("vendor/src/libsodium/crypto_core/ed25519/ref10/fe_25_5/")
